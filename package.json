@@ -1,0 +1,41 @@
+{
+  "name": "dsh-token-rush",
+  "version": "1.0.0",
+  "description": "DSH Web GUI 会话悬浮仪表：实时 token / 消耗估算 / 账户余额，高峰时段自动变橙红色的 rush-hour 提示小窗，可拖动。A floating session HUD for the DSH Web GUI: live token spend, estimated cost and API balance, turning orange-red during DeepSeek rush hours.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token",
+    "hud",
+    "usage",
+    "balance",
+    "rush-hour"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  }
+}

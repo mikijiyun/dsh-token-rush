@@ -1,0 +1,6 @@
+# dsh-token-rush plugin row: mounts the host half (balance/peak routes) and
+# declares the browser bundle (dsh.client scan picks this package up because
+# package.json declares dsh.client).
+- insert:
+    - id: token-rush
+      name: 'dsh-token-rush'
