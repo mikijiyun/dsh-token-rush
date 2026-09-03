@@ -17,14 +17,9 @@ Every time you ask the AI to do something, you can't help switching to the backe
 
 > "Using AI right now costs double. Take it easy."
 
-```text
-┌──────────────────────────────┐
-│ ● Session HUD       Off-peak │
-│ Total 41.8M (in 41.4M / out 128K) │
-│ Cost ≈ ¥12.34 · v4-flash    │
-│ Balance ¥98.50              │
-└──────────────────────────────┘
-```
+![Session HUD window in action (off-peak · follows the theme)](docs/window.png)
+
+*Above: the live look during an active session — the top-left floating window showing total tokens (in/out), estimated spend and account balance; currently off-peak, so it follows the DSH theme; during rush hours the whole window turns orange-red.*
 
 ## Features
 
